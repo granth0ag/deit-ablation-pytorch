@@ -1,0 +1,24 @@
+# Experiment 1: Plain ViT, plain augmentation, no distillation.
+experiment_name: vanilla_vit
+
+model: vit
+model_name: vit_small_patch16_224
+num_classes: 100
+
+dataset: cifar100
+data_dir: ./data
+image_size: 224
+
+augmentation: standard
+mixup: false
+distillation: false
+
+batch_size: 128
+epochs: 30
+lr: 0.0005
+weight_decay: 0.05
+warmup_epochs: 3
+
+num_workers: 4
+seed: 42
+output_dir: ./experiments/vanilla_vit
