@@ -75,25 +75,28 @@ python -m src.train --config configs/deit_full.yaml
 ```
 
 ## Project Structure
+
+```
 deit-ablation-pytorch/
 ├── configs/
-│ ├── vanilla_vit.yaml
-│ ├── vit_deit_aug.yaml
-│ └── deit_full.yaml
+│   ├── vanilla_vit.yaml
+│   ├── vit_deit_aug.yaml
+│   └── deit_full.yaml
 │
 ├── src/
-│ ├── data/
-│ │ ├── dataset.py
-│ │ └── transforms.py
-│ ├── models/
-│ │ ├── vit.py
-│ │ └── deit.py
-│ ├── distill.py
-│ ├── train.py
-│ └── utils.py
+│   ├── data/
+│   │   ├── dataset.py
+│   │   └── transforms.py
+│   ├── models/
+│   │   ├── vit.py
+│   │   └── deit.py
+│   ├── distill.py
+│   ├── train.py
+│   └── utils.py
 │
 ├── requirements.txt
 └── README.md
+```
 
 
 
